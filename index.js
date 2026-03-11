@@ -23,7 +23,7 @@ function findDateMatch(date) {
   return null;
 }
 
-app.get("/holidays", async (req, res) => {
+app.get("/holiday", async (req, res) => {
   const date = req.query.date;
   if (!date) {
     return res
