@@ -14,8 +14,12 @@ app.listen(PORT, () => {
 });
 
 function findDateMatch(date) {
+  //Extract only MM-DD from YYYY-MM-DD
+  const queryMonthDay = date.slice(5);
+
   for (const holiday of holidaysData.holidays) {
-    if (holiday.date === date) {
+    const holidayMonthDay = holiday.date.slice(5);
+    if (holidayMonthDay === queryMonthDay) {
       return holiday.name;
     }
   }
