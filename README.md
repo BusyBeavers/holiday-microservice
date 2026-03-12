@@ -23,7 +23,7 @@ GET https://holiday-microservice.onrender.com/holiday?date=12-25
 
 GET https://holiday-microservice.onrender.com/holiday/upcoming?date=12-03
 
-**Response 1**
+**Response 2**
 
 ```json
 {
